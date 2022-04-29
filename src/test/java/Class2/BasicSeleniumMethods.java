@@ -152,7 +152,7 @@ public class BasicSeleniumMethods {
 
      */
     @Test
-    public void verifyCorrectUrl() {
+    public boolean verifyCorrectUrl() {
         System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
         String url = "https://www.facebook.com/";
