@@ -80,6 +80,7 @@ public class Seleniumhw2 {
      *
      */
 
+    @Test
     public void createAccount() {
         MyDriver.launchUrlOnNewWindow("https://www.facebook.com");
         By signupButtonLocator = By.id("Sign Up for Facebook");
