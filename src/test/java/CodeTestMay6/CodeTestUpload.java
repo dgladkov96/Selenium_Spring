@@ -1,3 +1,5 @@
+package CodeTestMay6;
+
 import java.lang.reflect.Array;
 import java.nio.file.ClosedWatchServiceException;
 import java.util.*;
@@ -14,7 +16,7 @@ import org.testng.annotations.Test;
 
 
 
-public class codeTestMay {
+public class CodeTestUpload {
 
     //method to return factorial
 
@@ -107,23 +109,23 @@ public class codeTestMay {
         WebElement HighTemp = MyDriver.getDriver().findElement(HighTempLocator);
         WebElement FeelsLike = MyDriver.getDriver().findElement(FeelsLikeTempLocator);
 
-       String Low = LowTemp.getText();
-       String High = HighTemp.getText();
-       String FeelsLiketemp = FeelsLike.getText();
-       Double LowTemperature = Double.valueOf(Low);
-       Double HighTemperature = Double.valueOf(High);
-       Double FeelsLikeTemperature = Double.valueOf(FeelsLiketemp);
+        String Low = LowTemp.getText();
+        String High = HighTemp.getText();
+        String FeelsLiketemp = FeelsLike.getText();
+        Double LowTemperature = Double.valueOf(Low);
+        Double HighTemperature = Double.valueOf(High);
+        Double FeelsLikeTemperature = Double.valueOf(FeelsLiketemp);
 
-       boolean Tempisinbetween;
+        boolean Tempisinbetween;
 
-       if (FeelsLikeTemperature <= LowTemperature || FeelsLikeTemperature >= HighTemperature) {
-           Tempisinbetween = false;
-       } else {
-           Tempisinbetween = true;
-       }
-       Assert.assertTrue(Tempisinbetween, "The displayed feels like temperature is not between the High & Low Temperatures");
+        if (FeelsLikeTemperature <= LowTemperature || FeelsLikeTemperature >= HighTemperature) {
+            Tempisinbetween = false;
+        } else {
+            Tempisinbetween = true;
+        }
+        Assert.assertTrue(Tempisinbetween, "The displayed feels like temperature is not between the High & Low Temperatures");
 
-       MyDriver.quitWindows();
+        MyDriver.quitWindows();
 
     }
 
@@ -136,3 +138,4 @@ public class codeTestMay {
 
 
 }
+
